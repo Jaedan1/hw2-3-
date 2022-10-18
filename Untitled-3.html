@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function sunday() {
+  var date = (new Date($.now()));
+  if (date.getDay == 'Sunday')
+    {
+        $("#cdt").text("It is Sunday!");
+        $("#cdt").css("background-color","green");
+
+    }
+    else{
+        $("#cdt").text("It is not Sunday!");
+        $("#cdt").css("color","blue");
+    }
+}
+$(sunday);
+</script>
+</head>
+<body>
+
+<h2>Exercise 4</h2>
+
+<label for="time">Current date/time: </label>
+<span id="cdt"></span>
+
+</body>
+</html>
+
